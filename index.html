@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyan Theja - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://th.bing.com/th/id/OIP.E7KmskWasDmEktKfiFvl6QHaFP?w=1241&h=878&rs=1&pid=ImgDetMain" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi, I'm Kalyan Theja<br> a.k.a <span id="text">Kalyan Theja</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Kalyan Theja, an aspiring software developer with expertise in various programming languages
+                        and web development. I specialize in developing applications using languages like C++, Python,
+                        and JavaScript. I also have proficiency in React.js and full-stack web development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>React.js, HTML, CSS, JavaScript</li>
+                            <li><span>Programming</span><br>C++, C, Java, Python</li>
+                            <li><span>Blockchain</span><br>Solidity, Ethereum smart contracts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech in Computer Science and Engineering, VIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building dynamic websites and web applications using modern technologies like React.js and
+                        Node.js.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Blockchain Development</h2>
+                    <p>Developing secure and efficient blockchain applications, including smart contracts on Ethereum.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Building Android and iOS apps using modern frameworks and ensuring high-quality user experiences.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>CRYPTOMEME COIN</h3>
+                        <p>Created a memecoin called PepeBrett on Ethereum blockchain. Over 100 transactions in the
+                            first week.</p>
+                        <a href="https://basescan.org/token/0x0Df345df9AD38727DED09ea6E5576Dc3cEBC3218"
+                            target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Digital Asset Marketplace [ under development ]</h3>
+                        <p>Building a digital asset marketplace for secure transactions and handling virtual item
+                            trades.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>bitvex Token [ under development ]</h3>
+                        <p>Developing bitcoin like coin called bitvex  with enhanced security on Ethereum blockchain.</p>
+                        <a href="https://basescan.org/token/0x0Df345df9AD38727DED09ea6E5576Dc3cEBC3218"
+                            target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> kalyantheja007@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 7993261936</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/kalyantheja0"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kalyan-theja/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © KalyanTheja 2024. All Rights Reserved. <i class="fas fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script>
+        // Typing Effect Script
+        var _CONTENT = ["Software Developer", "Programmer", "Full Stack Developer"];
+        var _PART = 0;
+        var _PART_INDEX = 0;
+        var _INTERVAL_VAL;
+        var _ELEMENT = document.querySelector("#text");
+
+        function Type() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+
+            if (text === _CONTENT[_PART]) {
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Delete, 50);
+                }, 1000);
+            }
+        }
+
+        function Delete() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            if (text === '') {
+                clearInterval(_INTERVAL_VAL);
+                if (_PART === (_CONTENT.length - 1)) _PART = 0;
+                else _PART++;
+                _PART_INDEX = 0;
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+
+        _INTERVAL_VAL = setInterval(Type, 100);
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
